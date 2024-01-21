@@ -53,6 +53,34 @@ nav a:hover{
     font-size: 20px;
     border: none;
 }
+main{
+    width: 1440px;
+    margin: 0 auto;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    margin: 20px 230px;
+}
+.con2{
+    /* margin-right: 250px; */
+    padding-left:30px;
+}
+.con1 img{
+    width: 180px;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.sp{
+    color: orange;
+}
+.con2 h3{
+    padding-bottom: 10px;
+}
+.con2 p{
+    padding-bottom: 10px;
+}
+
 @media screen and (max-width: 576px) {
     header{
         padding: 20px;
@@ -69,4 +97,59 @@ nav a:hover{
             text-align: center;
             margin:10px;
     }
+    main{
+        width: 100%;
+    }
+    .container1{
+        flex-direction: column;
+        /* display: grid; */
+        /* margin: 10px ; */
+    }
+    .con1 img{
+        margin: 10px auto;
+        width: 400px;
+    }
+    .con2{
+        margin:0;
+        width: 400px;
+    }
+}    
+    @media screen and (min-width: 577px) and (max-width: 992px) {
+        header {
+                padding: 20px;
+            }
+        
+            nav {
+                 display: flex;
+            }
+        
+            .nav-title {
+                margin-bottom: 20px;
+                font-size: 20px;
+                text-align: left;
+            }
+        
+            .banner-content {
+                text-align: center;
+                margin: 10px;
+            }  
+                        main {
+                            width: 100%;
+                        }
+            
+                        .container1 {
+                            flex-direction: column;
+                            /* display: grid; */
+                            /* margin: 10px ; */
+                        }
+            
+                        .con1 img {
+                            margin: 10px auto;
+                            width: 400px;
+                        }
+            
+                        .con2 {
+                            margin: 0;
+                            width: 400px;
+                        }
 }
